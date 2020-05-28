@@ -744,6 +744,10 @@ X = sm.add_constant(X)
 X.head()
 ```
 
+    /Users/rafael/anaconda3/envs/flatiron-env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:2389: FutureWarning: Method .ptp is deprecated and will be removed in a future version. Use numpy.ptp instead.
+      return ptp(axis=axis, out=out, **kwargs)
+
+
 
 
 
@@ -856,8 +860,6 @@ y = numerical_df['SalePrice'] # got our target data
     
     See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
       """Entry point for launching an IPython kernel.
-    /Users/rafael/anaconda3/envs/flatiron-env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:2389: FutureWarning: Method .ptp is deprecated and will be removed in a future version. Use numpy.ptp instead.
-      return ptp(axis=axis, out=out, **kwargs)
 
 
 
@@ -882,10 +884,10 @@ results.summary()
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   322.8</td> 
 </tr>
 <tr>
-  <th>Date:</th>             <td>Wed, 27 May 2020</td> <th>  Prob (F-statistic):</th> <td>8.39e-214</td>
+  <th>Date:</th>             <td>Thu, 28 May 2020</td> <th>  Prob (F-statistic):</th> <td>8.39e-214</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>13:57:44</td>     <th>  Log-Likelihood:    </th> <td> -13786.</td> 
+  <th>Time:</th>                 <td>13:12:01</td>     <th>  Log-Likelihood:    </th> <td> -13786.</td> 
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>  1121</td>      <th>  AIC:               </th> <td>2.758e+04</td>
@@ -966,11 +968,7 @@ plt.show()
 ```
 
 
-    <IPython.core.display.Javascript object>
-
-
-
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAH0CAYAAADFQEl4AAAgAElEQVR4Xu3dCZClVXk//gNUgWjYgwRkQINKBCogrkg0IQqIfyOIlgKJQYqIAeIKiEskEFlEVDQoglqyBrRcEWSrxBK3aAwKISoYY9gcFGWZYGSJyL/O+7OnmmFwevo555nb7/3cKitGbn/P25/nMHO+fe97e7UHHnjggeJBgAABAgQIECBAgACBBIHVFJAEZUsQIECAAAECBAgQIDAIKCA2AgECBAgQIECAAAECaQIKSBq1hQgQIECAAAECBAgQUEDsAQIECBAgQIAAAQIE0gQUkDRqCxEgQIAAAQIECBAgoIDYAwQIECBAgAABAgQIpAkoIGnUFiJAgAABAgQIECBAQAGxBwgQIECAAAECBAgQSBNQQNKoLUSAAAECBAgQIECAgAJiDxAgQIAAAQIECBAgkCaggKRRW4gAAQIECBAgQIAAAQXEHiBAgAABAgQIECBAIE1AAUmjthABAgQIECBAgAABAgqIPUCAAAECBAgQIECAQJqAApJGbSECBAgQIECAAAECBBQQe4AAAQIECBAgQIAAgTQBBSSN2kIECBAgQIAAAQIECCgg9gABAgQIECBAgAABAmkCCkgatYUIECBAgAABAgQIEFBA7AECBAgQIECAAAECBNIEFJA0agsRIECAAAECBAgQIKCA2AMECBAgQIAAAQIECKQJKCBp1BYiQIAAAQIECBAgQEABsQcIECBAgAABAgQIEEgTUEDSqC1EgAABAgQIECBAgIACYg8QIECAAAECBAgQIJAmoICkUVuIAAECBAgQIECAAAEFxB4gQIAAAQIECBAgQCBNQAFJo7YQAQIECBAgQIAAAQIKiD1AgAABAgQIECBAgECagAKSRm0hAgQIECBAgAABAgQUEHuAAAECBAgQIECAAIE0AQUkjdpCBAgQIECAAAECBAgoIPYAAQIECBAgQIAAAQJpAgpIGrWFCBAgQIAAAQIECBBQQOwBAgQIECBAgAABAgTSBBSQNGoLESBAgAABAgQIECCggNgDBAgQIECAAAECBAikCSggadQWIkCAAAECBAgQIEBAAbEHCBAgQIAAAQIECBBIE1BA0qgtRIAAAQIECBAgQICAAmIPECBAgAABAgQIECCQJqCApFFbiAABAgQIECBAgAABBcQeIECAAAEC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CkjcsFmCDd2MUhABAgTSBBSQNOpuCykg3WhHGey8Fh+rAhI3bJZgQzejFESAAIE0AQUkjbrbQgpIN9pRBjuvxceqgJRSPvShDw3/uf766wfRbbfdthx11FFljz32GP7/e++9txx++OHl/PPPL3fffXd57nOfW0499dSy+eabL53AjTfeWGhRS88AACAASURBVA499NDyxS9+say99tplv/32K+9+97vLmmuuOecp2dBzpvJEAgQITIyAAjIxo5j3hSgg86abyi90XouPXQEppVx44YVljTXWKI9//OMH0bPOOqucdNJJ5Tvf+c5QRg4++ODhOWeeeWbZaKONymGHHVZuv/32cuWVVw5fd//995cddtihbLzxxuU973lPue2228r+++9f9t5773LKKafMeUo29JypPJEAAQITI6CATMwo5n0hCsi86abyC53X4mNXQB7GcMMNNxxKyEtf+tKhWJxzzjnl5S9/+fDsxYsXl0WLFpWLL7647L777uWSSy4pL3zhC8tNN91UNttss+E5H//4x8srX/nKcuutt5Z11113TpOyoefE5EkECBCYKAEFZKLGMa+LUUDmxTa1X+S8Fh+9ArKMYX0145Of/OTwCkZ9BeQnP/nJ8Jar+orHBhtssPTZ22+/fdlrr73KMcccM7xd64ILLihXX3310n9+xx13lFpi6luydtlllzlNyoaeE5MnESBAYKIEFJCJGse8LkYBmRfb1H6R81p89ArIbwyvueaastNOO5V77rmn/M7v/E4577zzygte8ILh/x5wwAHDfSCzH7vttlt53OMeV04//fRy0EEHDfePXH755Q96zlprrTW8bWvfffdd7qRq5uzcuqHrKytLliyZ86sm8S0ggQABAgQiAgpIRG8yvlYBmYw5LJSrUEDik1JAfmN43333lXoj+Z133lk+/elPl49+9KPliiuuKFddddVyC8iuu+5attpqq3LaaacNBeSGG24ol1122YMmUm9AP/vss8s+++yz3EkdffTRwysoyz4UkPjGlkCAAIEsAQUkS7rfOgpIP9sxJisg8akqIA9j+LznPW8oGPW+j15vwfIKSHwDSyBAgMCqFlBAVvUE4usrIHHDaUpQQOLTVkAexrCWjvp2qPe///3DTejnnntuednLXjY8+5Zbbhk+gnfZm9Bvvvnmsummmw7P+cQnPjHcR+Im9Pgm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" width="800">
+![png](linear-regression_files/linear-regression_24_0.png)
 
 
 
@@ -1039,6 +1037,1559 @@ scs.shapiro(residuals)
     * xvalues are independent 
 * why multicollinearity ruins a model
 * continuous and categorical data 
+
+## Objectives
+YWBAT (You Will Be Able To)
+* transform data to normalize it 
+    * explain the rational behind normalizing data
+* explain what standardization does
+* Test for multicollinearity using a VIF Test
+
+# Transformations
+* normalization - make data more like a normal distribution
+* standardization - scaling the data 
+
+
+```python
+numerical_df.head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Id</th>
+      <th>MSSubClass</th>
+      <th>LotFrontage</th>
+      <th>LotArea</th>
+      <th>OverallQual</th>
+      <th>OverallCond</th>
+      <th>YearBuilt</th>
+      <th>YearRemodAdd</th>
+      <th>MasVnrArea</th>
+      <th>BsmtFinSF1</th>
+      <th>...</th>
+      <th>WoodDeckSF</th>
+      <th>OpenPorchSF</th>
+      <th>EnclosedPorch</th>
+      <th>3SsnPorch</th>
+      <th>ScreenPorch</th>
+      <th>PoolArea</th>
+      <th>MiscVal</th>
+      <th>MoSold</th>
+      <th>YrSold</th>
+      <th>SalePrice</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>60</td>
+      <td>65.0</td>
+      <td>8450</td>
+      <td>7</td>
+      <td>5</td>
+      <td>2003</td>
+      <td>2003</td>
+      <td>196.0</td>
+      <td>706</td>
+      <td>...</td>
+      <td>0</td>
+      <td>61</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2008</td>
+      <td>208500</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>20</td>
+      <td>80.0</td>
+      <td>9600</td>
+      <td>6</td>
+      <td>8</td>
+      <td>1976</td>
+      <td>1976</td>
+      <td>0.0</td>
+      <td>978</td>
+      <td>...</td>
+      <td>298</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+      <td>2007</td>
+      <td>181500</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3</td>
+      <td>60</td>
+      <td>68.0</td>
+      <td>11250</td>
+      <td>7</td>
+      <td>5</td>
+      <td>2001</td>
+      <td>2002</td>
+      <td>162.0</td>
+      <td>486</td>
+      <td>...</td>
+      <td>0</td>
+      <td>42</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9</td>
+      <td>2008</td>
+      <td>223500</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+      <td>70</td>
+      <td>60.0</td>
+      <td>9550</td>
+      <td>7</td>
+      <td>5</td>
+      <td>1915</td>
+      <td>1970</td>
+      <td>0.0</td>
+      <td>216</td>
+      <td>...</td>
+      <td>0</td>
+      <td>35</td>
+      <td>272</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2006</td>
+      <td>140000</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>60</td>
+      <td>84.0</td>
+      <td>14260</td>
+      <td>8</td>
+      <td>5</td>
+      <td>2000</td>
+      <td>2000</td>
+      <td>350.0</td>
+      <td>655</td>
+      <td>...</td>
+      <td>192</td>
+      <td>84</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>12</td>
+      <td>2008</td>
+      <td>250000</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 38 columns</p>
+</div>
+
+
+
+# Transform data - normalization
+* log transormations
+* boxcox transformations
+
+
+```python
+for col in numerical_df.columns:
+    plt.hist(numerical_df[col], bins=20)
+    plt.title(col)
+    plt.show()
+```
+
+
+![png](linear-regression_files/linear-regression_35_0.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_1.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_2.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_3.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_4.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_5.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_6.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_7.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_8.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_9.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_10.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_11.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_12.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_13.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_14.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_15.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_16.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_17.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_18.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_19.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_20.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_21.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_22.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_23.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_24.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_25.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_26.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_27.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_28.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_29.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_30.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_31.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_32.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_33.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_34.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_35.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_36.png)
+
+
+
+![png](linear-regression_files/linear-regression_35_37.png)
+
+
+
+```python
+lot_frontage = numerical_df['LotFrontage']
+plt.hist(lot_frontage)
+plt.show()
+```
+
+
+![png](linear-regression_files/linear-regression_36_0.png)
+
+
+
+```python
+log_lot_frontage = np.log(lot_frontage)
+plt.hist(log_lot_frontage)
+plt.show()
+```
+
+
+![png](linear-regression_files/linear-regression_37_0.png)
+
+
+
+```python
+np.exp(5) # e = 2.718.... 2.718^? = 148.413
+```
+
+
+
+
+    148.4131591025766
+
+
+
+
+```python
+np.log(148.4131591025766)
+```
+
+
+
+
+    5.0
+
+
+
+
+```python
+np.log(200)
+```
+
+
+
+
+    5.298317366548036
+
+
+
+
+```python
+np.log(300), np.log(200)
+```
+
+
+
+
+    (5.703782474656201, 5.298317366548036)
+
+
+
+# Comparing the skewness and kurtosis we see that both scores get much closer to 0
+
+
+```python
+scs.skew(lot_frontage), scs.kurtosis(lot_frontage)
+```
+
+
+
+
+    (2.2481832382080698, 18.356938419863447)
+
+
+
+
+```python
+scs.skew(log_lot_frontage), scs.kurtosis(log_lot_frontage)
+```
+
+
+
+
+    (-0.7453562715504678, 2.4194490925703844)
+
+
+
+# Log Transformations
+* Pros
+    * normalizes data 
+* Cons
+    * Interpreting a log is difficult
+
+# Box Cox Transformation
+
+
+```python
+bc_lot_frontage, lam = scs.boxcox(lot_frontage)
+```
+
+
+```python
+plt.hist(bc_lot_frontage)
+plt.show()
+```
+
+
+![png](linear-regression_files/linear-regression_48_0.png)
+
+
+
+```python
+scs.skew(bc_lot_frontage), scs.kurtosis(bc_lot_frontage)
+```
+
+
+
+
+    (0.12110392077998999, 3.3689474840388636)
+
+
+
+# Boxcox in Sklearn - without standardization
+
+
+```python
+from sklearn.preprocessing import PowerTransformer
+```
+
+
+```python
+pt = PowerTransformer(method='box-cox', standardize=False)
+```
+
+
+```python
+lot_frontage.values
+```
+
+
+
+
+    array([65., 80., 68., ..., 66., 68., 75.])
+
+
+
+
+```python
+bc_lot_frontage = pt.fit_transform(lot_frontage.values.reshape(-1, 1))
+```
+
+
+```python
+plt.hist(bc_lot_frontage)
+plt.show()
+```
+
+
+![png](linear-regression_files/linear-regression_55_0.png)
+
+
+# Boxcox in Sklearn - with standardization
+
+
+```python
+pt = PowerTransformer(method='box-cox', standardize=True)
+```
+
+
+```python
+bc_lot_frontage = pt.fit_transform(lot_frontage.values.reshape(-1, 1))
+plt.hist(bc_lot_frontage)
+plt.show()
+```
+
+
+![png](linear-regression_files/linear-regression_58_0.png)
+
+
+# Workflow w/o train test split
+
+
+```python
+X = numerical_df.drop(columns='SalePrice')
+X.head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Id</th>
+      <th>MSSubClass</th>
+      <th>LotFrontage</th>
+      <th>LotArea</th>
+      <th>OverallQual</th>
+      <th>OverallCond</th>
+      <th>YearBuilt</th>
+      <th>YearRemodAdd</th>
+      <th>MasVnrArea</th>
+      <th>BsmtFinSF1</th>
+      <th>...</th>
+      <th>GarageArea</th>
+      <th>WoodDeckSF</th>
+      <th>OpenPorchSF</th>
+      <th>EnclosedPorch</th>
+      <th>3SsnPorch</th>
+      <th>ScreenPorch</th>
+      <th>PoolArea</th>
+      <th>MiscVal</th>
+      <th>MoSold</th>
+      <th>YrSold</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>60</td>
+      <td>65.0</td>
+      <td>8450</td>
+      <td>7</td>
+      <td>5</td>
+      <td>2003</td>
+      <td>2003</td>
+      <td>196.0</td>
+      <td>706</td>
+      <td>...</td>
+      <td>548</td>
+      <td>0</td>
+      <td>61</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2008</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>20</td>
+      <td>80.0</td>
+      <td>9600</td>
+      <td>6</td>
+      <td>8</td>
+      <td>1976</td>
+      <td>1976</td>
+      <td>0.0</td>
+      <td>978</td>
+      <td>...</td>
+      <td>460</td>
+      <td>298</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+      <td>2007</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3</td>
+      <td>60</td>
+      <td>68.0</td>
+      <td>11250</td>
+      <td>7</td>
+      <td>5</td>
+      <td>2001</td>
+      <td>2002</td>
+      <td>162.0</td>
+      <td>486</td>
+      <td>...</td>
+      <td>608</td>
+      <td>0</td>
+      <td>42</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9</td>
+      <td>2008</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+      <td>70</td>
+      <td>60.0</td>
+      <td>9550</td>
+      <td>7</td>
+      <td>5</td>
+      <td>1915</td>
+      <td>1970</td>
+      <td>0.0</td>
+      <td>216</td>
+      <td>...</td>
+      <td>642</td>
+      <td>0</td>
+      <td>35</td>
+      <td>272</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2006</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>60</td>
+      <td>84.0</td>
+      <td>14260</td>
+      <td>8</td>
+      <td>5</td>
+      <td>2000</td>
+      <td>2000</td>
+      <td>350.0</td>
+      <td>655</td>
+      <td>...</td>
+      <td>836</td>
+      <td>192</td>
+      <td>84</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>12</td>
+      <td>2008</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 37 columns</p>
+</div>
+
+
+
+
+```python
+y = numerical_df['SalePrice']
+```
+
+
+```python
+X['log_lot_frontage'] = np.log(X['LotFrontage'])
+X.head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Id</th>
+      <th>MSSubClass</th>
+      <th>LotFrontage</th>
+      <th>LotArea</th>
+      <th>OverallQual</th>
+      <th>OverallCond</th>
+      <th>YearBuilt</th>
+      <th>YearRemodAdd</th>
+      <th>MasVnrArea</th>
+      <th>BsmtFinSF1</th>
+      <th>...</th>
+      <th>WoodDeckSF</th>
+      <th>OpenPorchSF</th>
+      <th>EnclosedPorch</th>
+      <th>3SsnPorch</th>
+      <th>ScreenPorch</th>
+      <th>PoolArea</th>
+      <th>MiscVal</th>
+      <th>MoSold</th>
+      <th>YrSold</th>
+      <th>log_lot_frontage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>60</td>
+      <td>65.0</td>
+      <td>8450</td>
+      <td>7</td>
+      <td>5</td>
+      <td>2003</td>
+      <td>2003</td>
+      <td>196.0</td>
+      <td>706</td>
+      <td>...</td>
+      <td>0</td>
+      <td>61</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2008</td>
+      <td>4.174387</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>20</td>
+      <td>80.0</td>
+      <td>9600</td>
+      <td>6</td>
+      <td>8</td>
+      <td>1976</td>
+      <td>1976</td>
+      <td>0.0</td>
+      <td>978</td>
+      <td>...</td>
+      <td>298</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+      <td>2007</td>
+      <td>4.382027</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3</td>
+      <td>60</td>
+      <td>68.0</td>
+      <td>11250</td>
+      <td>7</td>
+      <td>5</td>
+      <td>2001</td>
+      <td>2002</td>
+      <td>162.0</td>
+      <td>486</td>
+      <td>...</td>
+      <td>0</td>
+      <td>42</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9</td>
+      <td>2008</td>
+      <td>4.219508</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+      <td>70</td>
+      <td>60.0</td>
+      <td>9550</td>
+      <td>7</td>
+      <td>5</td>
+      <td>1915</td>
+      <td>1970</td>
+      <td>0.0</td>
+      <td>216</td>
+      <td>...</td>
+      <td>0</td>
+      <td>35</td>
+      <td>272</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2006</td>
+      <td>4.094345</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>60</td>
+      <td>84.0</td>
+      <td>14260</td>
+      <td>8</td>
+      <td>5</td>
+      <td>2000</td>
+      <td>2000</td>
+      <td>350.0</td>
+      <td>655</td>
+      <td>...</td>
+      <td>192</td>
+      <td>84</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>12</td>
+      <td>2008</td>
+      <td>4.430817</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 38 columns</p>
+</div>
+
+
+
+
+```python
+X['log_garage_area'] = np.log(X['GarageArea'])
+X.head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Id</th>
+      <th>MSSubClass</th>
+      <th>LotFrontage</th>
+      <th>LotArea</th>
+      <th>OverallQual</th>
+      <th>OverallCond</th>
+      <th>YearBuilt</th>
+      <th>YearRemodAdd</th>
+      <th>MasVnrArea</th>
+      <th>BsmtFinSF1</th>
+      <th>...</th>
+      <th>OpenPorchSF</th>
+      <th>EnclosedPorch</th>
+      <th>3SsnPorch</th>
+      <th>ScreenPorch</th>
+      <th>PoolArea</th>
+      <th>MiscVal</th>
+      <th>MoSold</th>
+      <th>YrSold</th>
+      <th>log_lot_frontage</th>
+      <th>log_garage_area</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>60</td>
+      <td>65.0</td>
+      <td>8450</td>
+      <td>7</td>
+      <td>5</td>
+      <td>2003</td>
+      <td>2003</td>
+      <td>196.0</td>
+      <td>706</td>
+      <td>...</td>
+      <td>61</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2008</td>
+      <td>4.174387</td>
+      <td>6.306275</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>20</td>
+      <td>80.0</td>
+      <td>9600</td>
+      <td>6</td>
+      <td>8</td>
+      <td>1976</td>
+      <td>1976</td>
+      <td>0.0</td>
+      <td>978</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+      <td>2007</td>
+      <td>4.382027</td>
+      <td>6.131226</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3</td>
+      <td>60</td>
+      <td>68.0</td>
+      <td>11250</td>
+      <td>7</td>
+      <td>5</td>
+      <td>2001</td>
+      <td>2002</td>
+      <td>162.0</td>
+      <td>486</td>
+      <td>...</td>
+      <td>42</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9</td>
+      <td>2008</td>
+      <td>4.219508</td>
+      <td>6.410175</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+      <td>70</td>
+      <td>60.0</td>
+      <td>9550</td>
+      <td>7</td>
+      <td>5</td>
+      <td>1915</td>
+      <td>1970</td>
+      <td>0.0</td>
+      <td>216</td>
+      <td>...</td>
+      <td>35</td>
+      <td>272</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2006</td>
+      <td>4.094345</td>
+      <td>6.464588</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>60</td>
+      <td>84.0</td>
+      <td>14260</td>
+      <td>8</td>
+      <td>5</td>
+      <td>2000</td>
+      <td>2000</td>
+      <td>350.0</td>
+      <td>655</td>
+      <td>...</td>
+      <td>84</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>12</td>
+      <td>2008</td>
+      <td>4.430817</td>
+      <td>6.728629</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 39 columns</p>
+</div>
+
+
+
+
+```python
+X['bc_gc_living_area'], lam = scs.boxcox(X['GrLivArea'])
+X.head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Id</th>
+      <th>MSSubClass</th>
+      <th>LotFrontage</th>
+      <th>LotArea</th>
+      <th>OverallQual</th>
+      <th>OverallCond</th>
+      <th>YearBuilt</th>
+      <th>YearRemodAdd</th>
+      <th>MasVnrArea</th>
+      <th>BsmtFinSF1</th>
+      <th>...</th>
+      <th>EnclosedPorch</th>
+      <th>3SsnPorch</th>
+      <th>ScreenPorch</th>
+      <th>PoolArea</th>
+      <th>MiscVal</th>
+      <th>MoSold</th>
+      <th>YrSold</th>
+      <th>log_lot_frontage</th>
+      <th>log_garage_area</th>
+      <th>bc_gc_living_area</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>60</td>
+      <td>65.0</td>
+      <td>8450</td>
+      <td>7</td>
+      <td>5</td>
+      <td>2003</td>
+      <td>2003</td>
+      <td>196.0</td>
+      <td>706</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2008</td>
+      <td>4.174387</td>
+      <td>6.306275</td>
+      <td>5.812015</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>20</td>
+      <td>80.0</td>
+      <td>9600</td>
+      <td>6</td>
+      <td>8</td>
+      <td>1976</td>
+      <td>1976</td>
+      <td>0.0</td>
+      <td>978</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+      <td>2007</td>
+      <td>4.382027</td>
+      <td>6.131226</td>
+      <td>5.628985</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3</td>
+      <td>60</td>
+      <td>68.0</td>
+      <td>11250</td>
+      <td>7</td>
+      <td>5</td>
+      <td>2001</td>
+      <td>2002</td>
+      <td>162.0</td>
+      <td>486</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9</td>
+      <td>2008</td>
+      <td>4.219508</td>
+      <td>6.410175</td>
+      <td>5.837900</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+      <td>70</td>
+      <td>60.0</td>
+      <td>9550</td>
+      <td>7</td>
+      <td>5</td>
+      <td>1915</td>
+      <td>1970</td>
+      <td>0.0</td>
+      <td>216</td>
+      <td>...</td>
+      <td>272</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2006</td>
+      <td>4.094345</td>
+      <td>6.464588</td>
+      <td>5.814450</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>60</td>
+      <td>84.0</td>
+      <td>14260</td>
+      <td>8</td>
+      <td>5</td>
+      <td>2000</td>
+      <td>2000</td>
+      <td>350.0</td>
+      <td>655</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>12</td>
+      <td>2008</td>
+      <td>4.430817</td>
+      <td>6.728629</td>
+      <td>5.960381</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 40 columns</p>
+</div>
+
+
+
+
+```python
+X['SalePrice'] = y
+X.head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Id</th>
+      <th>MSSubClass</th>
+      <th>LotFrontage</th>
+      <th>LotArea</th>
+      <th>OverallQual</th>
+      <th>OverallCond</th>
+      <th>YearBuilt</th>
+      <th>YearRemodAdd</th>
+      <th>MasVnrArea</th>
+      <th>BsmtFinSF1</th>
+      <th>...</th>
+      <th>3SsnPorch</th>
+      <th>ScreenPorch</th>
+      <th>PoolArea</th>
+      <th>MiscVal</th>
+      <th>MoSold</th>
+      <th>YrSold</th>
+      <th>log_lot_frontage</th>
+      <th>log_garage_area</th>
+      <th>bc_gc_living_area</th>
+      <th>SalePrice</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>60</td>
+      <td>65.0</td>
+      <td>8450</td>
+      <td>7</td>
+      <td>5</td>
+      <td>2003</td>
+      <td>2003</td>
+      <td>196.0</td>
+      <td>706</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2008</td>
+      <td>4.174387</td>
+      <td>6.306275</td>
+      <td>5.812015</td>
+      <td>208500</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>20</td>
+      <td>80.0</td>
+      <td>9600</td>
+      <td>6</td>
+      <td>8</td>
+      <td>1976</td>
+      <td>1976</td>
+      <td>0.0</td>
+      <td>978</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+      <td>2007</td>
+      <td>4.382027</td>
+      <td>6.131226</td>
+      <td>5.628985</td>
+      <td>181500</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3</td>
+      <td>60</td>
+      <td>68.0</td>
+      <td>11250</td>
+      <td>7</td>
+      <td>5</td>
+      <td>2001</td>
+      <td>2002</td>
+      <td>162.0</td>
+      <td>486</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9</td>
+      <td>2008</td>
+      <td>4.219508</td>
+      <td>6.410175</td>
+      <td>5.837900</td>
+      <td>223500</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+      <td>70</td>
+      <td>60.0</td>
+      <td>9550</td>
+      <td>7</td>
+      <td>5</td>
+      <td>1915</td>
+      <td>1970</td>
+      <td>0.0</td>
+      <td>216</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2006</td>
+      <td>4.094345</td>
+      <td>6.464588</td>
+      <td>5.814450</td>
+      <td>140000</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>60</td>
+      <td>84.0</td>
+      <td>14260</td>
+      <td>8</td>
+      <td>5</td>
+      <td>2000</td>
+      <td>2000</td>
+      <td>350.0</td>
+      <td>655</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>12</td>
+      <td>2008</td>
+      <td>4.430817</td>
+      <td>6.728629</td>
+      <td>5.960381</td>
+      <td>250000</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 41 columns</p>
+</div>
+
+
+
+#### Build a model with the columns untransformed and compare it to a model with transformed columns
+
+
+```python
+ut_cols = ['LotFrontage', 'GarageArea', 'GrLivArea']
+t_cols = ['log_lot_frontage', 'log_garage_area', 'bc_gc_living_area']
+```
+
+
+```python
+def build_ols(df=numerical_df, cols=['LotFrontage', 'GarageArea', 'GrLivArea'], target='SalePrice'):
+    x = df[cols]
+    y = df[target]
+    ols = sm.OLS(y, x)
+    res = ols.fit()
+    print(res.summary())
+    return ols
+```
+
+
+```python
+build_ols(df=numerical_df, cols=ut_cols[1:])
+```
+
+                                     OLS Regression Results                                
+    =======================================================================================
+    Dep. Variable:              SalePrice   R-squared (uncentered):                   0.932
+    Model:                            OLS   Adj. R-squared (uncentered):              0.932
+    Method:                 Least Squares   F-statistic:                              7645.
+    Date:                Thu, 28 May 2020   Prob (F-statistic):                        0.00
+    Time:                        14:02:00   Log-Likelihood:                         -13786.
+    No. Observations:                1121   AIC:                                  2.758e+04
+    Df Residuals:                    1119   BIC:                                  2.759e+04
+    Df Model:                           2                                                  
+    Covariance Type:            nonrobust                                                  
+    ==============================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+    ------------------------------------------------------------------------------
+    GarageArea   141.1718      8.680     16.264      0.000     124.141     158.202
+    GrLivArea     76.0093      2.886     26.340      0.000      70.347      81.671
+    ==============================================================================
+    Omnibus:                      243.863   Durbin-Watson:                   2.037
+    Prob(Omnibus):                  0.000   Jarque-Bera (JB):             5600.299
+    Skew:                           0.385   Prob(JB):                         0.00
+    Kurtosis:                      13.923   Cond. No.                         9.73
+    ==============================================================================
+    
+    Warnings:
+    [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+    <statsmodels.regression.linear_model.OLS at 0x1c179f8a58>
+
+
+
+# Interpret the OLS Summary
+* Section A - model
+    * R2 -> Explained Variance 
+    * P(F) < 0.05
+    * AIC, BIC - regularization scores
+* Section B - features
+    * pvalues
+        * H0: the coefficient predicts the target randomly
+            * this happens with
+                * bad predictors
+                * multicollinearity
+                * non normal data
+        * HA: the coefficient predicts the target not randomly
+* Section C - residuals
+    * Are my residuals normal?
+        * skew -> 0 is ideal
+        * kurtosis -> 0 is ideal 
+    * Cond. No -> multicollinearity smaller is better
+
+
+```python
+build_ols(df=X, cols=t_cols[1:])
+```
+
+                                     OLS Regression Results                                
+    =======================================================================================
+    Dep. Variable:              SalePrice   R-squared (uncentered):                   0.861
+    Model:                            OLS   Adj. R-squared (uncentered):              0.861
+    Method:                 Least Squares   F-statistic:                              3461.
+    Date:                Thu, 28 May 2020   Prob (F-statistic):                        0.00
+    Time:                        14:06:15   Log-Likelihood:                         -14186.
+    No. Observations:                1121   AIC:                                  2.838e+04
+    Df Residuals:                    1119   BIC:                                  2.839e+04
+    Df Model:                           2                                                  
+    Covariance Type:            nonrobust                                                  
+    =====================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+    -------------------------------------------------------------------------------------
+    log_garage_area    6.101e+04   6523.394      9.353      0.000    4.82e+04    7.38e+04
+    bc_gc_living_area -3.287e+04   7030.184     -4.675      0.000   -4.67e+04   -1.91e+04
+    ==============================================================================
+    Omnibus:                      525.029   Durbin-Watson:                   2.017
+    Prob(Omnibus):                  0.000   Jarque-Bera (JB):             3753.860
+    Skew:                           2.032   Prob(JB):                         0.00
+    Kurtosis:                      10.990   Cond. No.                         35.5
+    ==============================================================================
+    
+    Warnings:
+    [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+    <statsmodels.regression.linear_model.OLS at 0x1c179f80f0>
+
+
 
 
 ```python
